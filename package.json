@@ -1,0 +1,35 @@
+{
+  "name": "customer-sentiment",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node --env-file=config.env build/app.js",
+    "build": "tsc && copyfiles -u 1 src/audio/* src/ai_output/* build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/martinsoengas/customer-sentiment.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/martinsoengas/customer-sentiment/issues"
+  },
+  "homepage": "https://github.com/martinsoengas/customer-sentiment#readme",
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.14.2",
+    "@types/stream-to-blob": "^2.0.0",
+    "copyfiles": "^2.4.1",
+    "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "axios": "^1.7.2",
+    "express": "^4.19.2",
+    "openai": "^4.49.1",
+    "stream-to-blob": "^2.0.1"
+  }
+}
